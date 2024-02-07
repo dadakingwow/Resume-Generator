@@ -1,0 +1,90 @@
+/* Root Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Form Layout */
+.form {
+  display: flex;
+  min-height: 100vh; /* Ensure form takes full viewport height */
+  gap: 5px; /* Space between left and right sides */
+}
+
+/* Side Styles */
+.leftSide,
+.rightSide {
+  width: 50%;
+}
+
+.rightSide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden; /* Ensures no content overflows the rounded border */
+}
+
+/* Input and Button Styles */
+input {
+  padding: 8px;
+  margin: 10px 0; /* Adjusted for consistent spacing */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Section Styles */
+.education,
+.experience {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allows scrolling within each section if content overflows */
+  padding: 10px; /* Padding for internal spacing */
+  gap: 10px; /* Space between internal elements */
+}
+
+/* Additional Styles */
+.logo,
+.card,
+.read-the-docs {
+  /* Your existing styles */
+}
+
+.logo:hover,
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

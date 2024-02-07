@@ -1,0 +1,103 @@
+/* Result.css */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.information p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+.bottomSide {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.information p svg {
+  margin-right: 8px;
+}
+
+#fullName {
+  font-size: 20px;
+}
+
+.information p:nth-child(2),
+.information p:nth-child(3) {
+  font-size: 16px;
+}
+
+.educationPart,
+.experiencePart {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.education h2,
+.experience h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.education div,
+.experience div {
+  margin-bottom: 10px;
+}
+
+#education {
+  font-size: 20px;
+}
+.educationInfo,
+.experienceInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.dates {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.companyName,
+.schoolName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experienceInfo p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.major {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.experienceRight {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  align-items: flex-end;
+}
+
+.experienceLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.jobDuty {
+  width: 400px;
+}
+/* Adjust other styles as needed */
